@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    height: 215px;
+    background-color: white;
+    border: 2px solid red;
+    padding: 10px;
+}
+.box{
+    border: 2px solid green;
+    background-color: white;
+    height: 212px;
+    width: 212px;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* animation-direction:reverse; */
+    /* animation-direction: alternate; */
+
+
+    /* animation-fill-mode:forwards ; */
+    /* animations stops at the end point. */
+
+    animation-fill-mode: backwards;
+    /* animations goes till the end point and then comes back to its initial state.  */
+
+}
+/* @keyframes test {
+    from{
+        width: 212px;
+    }
+
+    to{
+        width: 800px;
+    }
+} */
+
+@keyframes test{
+    0%{
+        width: 212px;
+        background-color:orange ;
+    }
+    50%{
+        width: 50%; 
+        background-color:white ;
+    }
+    100%{
+         width: 1000%;
+         background-color:green ;
+    }
+   
+}

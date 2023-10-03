@@ -1,0 +1,26 @@
+/* *{
+    --dark-red:#120fcd;
+} */
+:root{
+    --dark-red:#120fcd;
+    /* Now the scope of this variable is global and can be used anywhere without declaring repeatedly */
+}
+
+.container{
+    border: 1px solid brown;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    background-color: var(--dark-red);
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    /* To declare variables we use --variablename:value; */
+
+    /* --dark-red:#120fcd;  */ /*Local variable*/
+
+    /* to access that variable we use var function  */
+    /* the scope of this variable is valid inside this box class only  because this in the local scope  to access this color globally we will have to define this variable in root*/
+    color:var(--dark-red);
+}
